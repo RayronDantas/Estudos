@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Teste mudando o tamanho da janela do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/terraria-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/terraria-m.png" type="image/png">
+        <img src="imagens/terraria-p.png" alt="A imagem flexível funciona">
+    </picture>
+
+    <h1>Reproduzindo áudio em html</h1>
+        <p><em>Teste...</em></p>
+        <p>Exemplo 1:</p> 
+        <audio src="midia/Moving In The Shadows - The Soundlings.mp3" controls autoplay></audio>
+        <p>Exemplo 2:</p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.wav" type="audio/wav">
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <p>Infelizmente seu navegador não conseugue reproduzir áudio. <a href="midia/Moving In The Shadows - The Soundlings.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+        </audio>
+        <!-- Formatos de áudio: MP3 WAV OGG -->
+</body>
+</html>

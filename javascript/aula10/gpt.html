@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+  <style>
+    body {
+      font: normal 18pt Arial;
+    }
+    input {
+      font: normal 18pt Arial;
+      width: 100px;
+    }
+    #res {
+      margin: 20px;
+      text-align: left;
+      background-color: white;
+      padding-left: 5px;
+    }
+    #operators {
+      margin-top: 20px;
+    }
+    #operators input {
+      width: 150px;
+    }
+    .conteudo {
+      text-align: center;
+      background-color: rgb(76, 187, 187);
+      width: 700px;
+      height: 300px;
+      position: absolute;
+      inset: 50% 50%;
+      transform: translate(-50%, -50%);
+    }
+    .valores input {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="conteudo">
+    <h1>Operações</h1>
+    <div class="valores">
+      <input type="number" id="txtn1" />
+      <input type="number" id="txtn2" />
+    </div>
+    <div id="operators">
+      <input type="button" value="Somar" onclick="calcular('+')" />
+      <input type="button" value="Subtrair" onclick="calcular('-')" />
+      <input type="button" value="Multiplicar" onclick="calcular('*')" />
+      <input type="button" value="Dividir" onclick="calcular('/')" />
+    </div>
+    <div id="res">Resultado:</div>
+  </div>
+
+  <script>
+    function calcular(operacao) {
+      let n1 = Number(document.getElementById("txtn1").value);
+      let n2 = Number(document.getElementById("txtn2").value);
+      let res = document.getElementById("res");
+      let resultado;
+
+      switch (operacao) {
+        case '+': resultado = n1 + n2; break;
+        case '-': resultado = n1 - n2; break;
+        case '*': resultado = n1 * n2; break;
+        case '/': resultado = n2 !== 0 ? n1 / n2 : 'Erro (divisão por zero)'; break;
+      }
+      res.innerHTML = `O resultado da operação é <strong>${resultado}</strong>`;
+    }
+  </script>
+</body>
+</html>

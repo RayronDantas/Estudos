@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(189, 254, 201);
+}
+
+h1{
+    color: rgb(1, 57, 1);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(70, 136, 70);
+    color: white;
+}
+
+h2{
+    color: #027502;
+}
+
+.basico{
+    color: #027502;
+}
+
+.intermediario{
+    color: #b2b214;
+}
+
+.avancado{
+    color: #b10404d3;
+}
+

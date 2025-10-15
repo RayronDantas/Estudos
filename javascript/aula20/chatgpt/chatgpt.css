@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body {
+  background: rgb(70, 142, 236);
+  font: 15pt Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+input[type="number"] {
+  flex: 1;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #468dee;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #316bc7;
+}
+
+#numlist {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  margin-bottom: 10px;
+}
+
+#res p {
+  margin: 5px 0;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 15px 0;
+}

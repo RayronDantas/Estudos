@@ -1,13 +1,23 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --font-default: Verdana, Geneva, Tahoma, sans-serif;
+    --font-title: 'Passion One', sans-serif;
+    --font-text: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: whitesmoke;
+    font-family: var(--font-default);
 }
 
 header {
@@ -15,11 +25,12 @@ header {
     color: white;
     text-align: center;
     font-variant: small-caps;
-    padding: 50px 30px 30px 30px;
+    padding: 50px 30px;
 }
 header h1 {
-    font-size: 120px;
     margin: 0;
+    font-size: 10vw;
+    font-family: var(--font-title);
 }
 header p a {
     text-decoration: none;
@@ -32,21 +43,24 @@ header p a:hover {
 main section {
     padding: 10vh 0px 10vh 30px;
     text-align: left;
-    font-size: 3em;
+    font-size: 3.5vw;
+    font-family: var(--font-text);
 }
 
 main section p {
     line-height: 2em;
+    padding-bottom: 2em;
 }
 
 section.section-bg-image {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.655)
 }
 
 section.section-bg-image p {
-    width: fit-content;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.55);
     color: white;
     text-shadow: 1px 1px 2px black;
@@ -65,8 +79,8 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
-    font-size: 20px;
+    padding: 10px 15px;
+    font-size: 1.7vw;
 }
 
 footer p a {

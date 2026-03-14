@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 20px;
+            background-color: rgb(173, 173, 173);
+            color: rgb(0, 0, 0);;
+            padding: 10px;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead, tfoot {
+            background-color: rgb(81, 81, 81);
+            color: white;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(81, 81, 81);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgb(224, 224, 224);
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Top 5 estados mais populosos do país</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44.411.238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.539.989</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.055.174</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.141.626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.444.380</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total:</th>
+                <td class="num"><strong>106.592.407</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

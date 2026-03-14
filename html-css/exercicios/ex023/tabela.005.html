@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .cnome {
+            background-color: lightblue;
+        }
+        .csexo {
+            background-color: lightgreen;
+        }
+        .cidade {
+            background-color: lightyellow;
+        }
+        .cprofissao {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Paulo Ricardo</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Claudia</td>
+            <td>F</td>
+            <td>45</td>
+            <td>Aeromoça</td>
+        </tr>
+        <tr>
+            <td>Ellen</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Bióloga</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Designer</td>
+        </tr>
+    </table>
+</body>
+</html>

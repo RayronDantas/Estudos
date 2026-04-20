@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #content::-webkit-scrollbar  {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" onclick="clicou()">Clique em mim</button>
+    <div style="border: 10px dashed rgb(209, 152, 67); width: fit-content;">
+        <div id="content" style="background-color: red; width: 300px; height: 300px; padding: 10px; overflow: hidden;"></div>
+    </div>
+    <script>
+        function clicou() {
+            d = document.getElementById('content');
+            d.innerHTML += '<p>Você clicou!</p>'
+        }
+    </script>
+</body>
+</html>
